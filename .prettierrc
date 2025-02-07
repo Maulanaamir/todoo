@@ -1,0 +1,37 @@
+{
+	"arrowParens": "always",
+	"singleQuote": true,
+	"jsxSingleQuote": true,
+	"bracketSpacing": true,
+	"bracketSameLine": true,
+	"semi": true,
+	"trailingComma": "all",
+	"useTabs": true,
+	"tabWidth": 2,
+	"endOfLine": "lf",
+	"printWidth": 600,
+	"proseWrap": "never",
+	"quoteProps": "consistent",
+	"singleAttributePerLine": true,
+	"vueIndentScriptAndStyle": true,
+	"experimentalTernaries": true,
+	"plugins": ["@ianvs/prettier-plugin-sort-imports", "@shufo/prettier-plugin-blade"],
+	"importOrder": ["^react$", "<TYPES>^(node:)", "<TYPES>", "<TYPES>^[.]", "<BUILT_IN_MODULES>", "<THIRD_PARTY_MODULES>", "^[.]", "^(?!.*[.]css$)[./].*$", ".css$"],
+	"overrides": [
+		{
+			"files": ["*.blade.php"],
+			"options": {
+				"parser": "blade",
+				"printWidth": 600,
+				"tabWidth": 2,
+				"wrapAttributes": "aligned-multiple",
+				"wrapAttributesMinAttrs": 2,
+				"sortTailwindcssClasses": true,
+				"sortHtmlAttributes": "code-guide",
+				"indentInnerHtml": true,
+				"extraLiners": "head,body,html,script",
+				"trailingCommaPHP": false
+			}
+		}
+	]
+}

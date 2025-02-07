@@ -1,0 +1,4 @@
+public/assets/css/*.min.css
+public/assets/js/*.min.js
+.gitignore
+vendor
